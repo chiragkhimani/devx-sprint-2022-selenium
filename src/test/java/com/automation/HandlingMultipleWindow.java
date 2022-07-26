@@ -25,8 +25,6 @@ class HandlingMultipleWindow {
         WebElement link = driver.findElement(By.xpath("(//span[@class='s-item__watchheart-icon']/ancestor::li//h3)[1]"));
         link.click();
 
-
-
         // Return current window id
         String originalWindow = driver.getWindowHandle();
 
@@ -49,5 +47,6 @@ class HandlingMultipleWindow {
 
         // Switch to original window
         driver.switchTo().window(originalWindow);
+
     }
 }
